@@ -21,6 +21,10 @@ class House
       room.area
       house_area += room.area
     end
-    house_area 
+    house_area
+  end
+
+  def price_per_square_foot
+    @price / house_area.to_f.round(2)
   end
 end
