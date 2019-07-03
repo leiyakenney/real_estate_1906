@@ -33,8 +33,9 @@ class House
   end
 
   def rooms_by_category
-    @rooms.find_all do |room|
-      {category => @room}
+    rooms_by_cat = Hash.new
+    @rooms.find_all do |category, room|
+      {:category => @rooms}
     end
   end
 end
